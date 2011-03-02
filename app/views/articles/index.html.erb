@@ -1,0 +1,20 @@
+<head>
+<title>GVC team 4 2010</title>
+<style type="text/css">
+#cdiv {
+border: 1px solid #BDBDBD;
+padding-left: 5px;
+}
+</style>
+</head>
+
+<div id="cdiv">
+<h1>GVC Team 4 2010</h1><br />
+
+
+<% @articles.each do |article| %>
+    <h3><%= link_to article.title, article %></h3>
+<% end %>
+</div>
+
+<br />

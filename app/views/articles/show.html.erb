@@ -1,0 +1,33 @@
+<head>
+<style type="text/css">
+#cdiv {
+border: 1px solid #BDBDBD;
+padding-left: 5px;
+}
+
+#linksdiv {
+border: 1px solid red;
+float: right;
+text-align: center;
+padding-left: 2px;
+padding-right: 2px;
+}
+</style>
+</head>
+
+
+<p id="notice"><%= notice %></p>
+<div id="cdiv">
+<h1><%= h(@article.title) %></h1>
+
+<p>
+  <b>Written by: <%= h(@article.author) %></b>
+</p>
+<div id="linksdiv">
+<%= link_to 'Back', articles_path %>
+</div>
+</div>
+<p>
+  <%= raw @article.article %>
+</p>
+
